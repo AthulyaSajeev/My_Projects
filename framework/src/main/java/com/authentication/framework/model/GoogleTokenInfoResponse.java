@@ -1,15 +1,19 @@
 package com.authentication.framework.model;
- 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * 
+ * @author ATHULYA SAJEEV
+ *
+ */
+
 @Getter
 @Setter
 public class GoogleTokenInfoResponse {
- 
-	 
 
 	public String getEmail() {
 		return email;
@@ -17,23 +21,23 @@ public class GoogleTokenInfoResponse {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}  
- 
-    @JsonProperty("error")
-    private String error;
- 
-    private String email;  
-    private String aud; 
-    private String sub; 
-    private String email_verified; 
-    private String exp; 
-    private String iat; 
-    private String iss; 
-    private String scope; 
-    private String audience; 
-    private String token_type;  
+	}
 
-    public String getError() {
+	@JsonProperty("error")
+	private String error;
+
+	private String email;
+	private String aud;
+	private String sub;
+	private String email_verified;
+	private String exp;
+	private String iat;
+	private String iss;
+	private String scope;
+	private String audience;
+	private String token_type;
+
+	public String getError() {
 		return error;
 	}
 
@@ -114,6 +118,6 @@ public class GoogleTokenInfoResponse {
 	}
 
 	public boolean hasError() {
-        return error != null;
-    }
+		return error != null;
+	}
 }

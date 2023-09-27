@@ -3,6 +3,12 @@ package com.authentication.framework.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+ * 
+ * @author ATHULYA SAJEEV
+ *
+ */
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class TokenVerificationResponse {
 	@JsonProperty("isValid")
@@ -57,8 +63,5 @@ public class TokenVerificationResponse {
 	public TokenVerificationResponse(boolean isValid, String message) {
 		this.isValid = isValid;
 		this.message = message;
-	}
-	
-
-	// Getter and setter methods for the fields
+	} 
 }

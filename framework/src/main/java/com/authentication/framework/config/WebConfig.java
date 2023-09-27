@@ -5,6 +5,12 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * 
+ * @author ATHULYA SAJEEV
+ *
+ */
+
 @Configuration
 @EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
