@@ -26,6 +26,11 @@ public class AuthController {
 	public AuthController(PluginManager pluginManager) {
 		this.pluginManager = pluginManager;
 	}
+	@GetMapping("/hello")
+	public String hello() 
+	{
+		return "Hello javaTpoint"; 
+	}
 
 	@PostMapping("/verify")
 	public TokenVerificationResponse verifyToken(@RequestParam String providerName, @RequestParam String accessToken) {
